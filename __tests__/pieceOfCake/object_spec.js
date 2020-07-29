@@ -150,10 +150,10 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = {};
+    const expected = Object.prototype;
     // --end->
 
-    expect(Object.getPrototypeOf(emptyObject)).toStrictEqual(expected);
+    expect(Object.getPrototypeOf(emptyObject)).toBe(expected);
   });
 
   it('should get null for object prototype\'s prototype', () => {
